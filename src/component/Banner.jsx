@@ -9,15 +9,15 @@ import Button from './layer/Button';
 
 
 
-const Banner = () => {
 
+const Banner = () => {
   const [count01, setCount01] = useState(1);
   const [count02, setCount02] = useState(1);
   return (
     <div className='relative text-white'>
       <div className='absolute top-1/3 left-1/2 translate-x-[-50%] z-40'>
         <div className='flex items-center justify-center gap-x-4'>
-          <Image className="w-14 h-2" src={line} alt={line} />
+          <Image className="w-14 h-2 cursor-auto" src={line} alt={line} />
           <h2 className='font-RB text-sm tracking-widest'>TIME TO RECONNECT</h2>
         </div>
         <h2 className='text-[64px] font-Tinos'>A New Vision of Comfort</h2>
@@ -28,7 +28,6 @@ const Banner = () => {
       </div>
 
       <div className='main w-full h-[180px] bg-black absolute bottom-0 left-1/2 translate-x-[-50%] z-40 opacity-50 '>
-
       </div>
 
       <div className="absolute z-40 bottom-[1%]  w-full">
@@ -45,9 +44,7 @@ const Banner = () => {
                 </div>
 
                 <FaAngleUp className='ml-auto' />
-                {/* -------------------------------------------------------------------------*/}
-              
-                {/* -------------------------------------------------------------------------*/}
+                
 
 
 
