@@ -1,2 +1,2 @@
-# Hotel-Prive
-Hotel Prive
+# React + Vite
+
