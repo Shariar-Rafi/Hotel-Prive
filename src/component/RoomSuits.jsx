@@ -23,7 +23,7 @@ const RoomSuits = () => {
                 </div>
             </div>
 
-            <div className="bottom">
+            <div className="bottom cursor-pointer">
                 <Slider01 text1="Deluxe Double Room" text2="Superior Single Room" text3="Superior Double Room" text4="Family Room"/>
             </div>
         </div>
