@@ -14,8 +14,6 @@ Hotel Prive is a luxurious, user-friendly website designed to provide an excepti
 - **Elegant Design**: A visually appealing and intuitive design that captures the essence of luxury and comfort.
 - **Responsive Layout**: Ensures a flawless browsing experience on desktops, tablets, and mobile devices.
 - **Interactive Banner**: Engaging banners with dynamic content to highlight special offers and promotions.
-- **Booking System**: Simplified booking process with clear call-to-action buttons and form validations.
-- **Special Offers Section**: Highlighting exclusive deals and packages with an interactive carousel.
 - **Sidebar Navigation**: Accessible sidebar with quick links to key sections of the site and social media integration.
 - **Rich Media Integration**: High-quality images and videos to showcase the hotel's amenities and services.
 
