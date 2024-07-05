@@ -33,7 +33,7 @@ const Banner = () => {
       <div className="absolute z-40 bottom-[1%]  w-full">
         <Container>
           <div className="sub text-white py-10 flex items-center justify-between">
-            <div className='flex flex-col justify-center w-[374px]'>
+            <div className='flex flex-col justify-center w-[274px]'>
               <p className='text-xs font-RB  w-full tracking-widest '>ARRIVAL DATE</p>
               <div className='flex  items-center font-RB border-b-2 border-white' >
                 <p className='text-[48px]'>3</p>
@@ -50,7 +50,7 @@ const Banner = () => {
 
               </div>
             </div>
-            <div className='flex flex-col justify-center w-[374px]'>
+            <div className='flex flex-col justify-center w-[274px]'>
               <p className='text-xs font-RB  w-full tracking-widest '>DEPARTURE DATE
               </p>
               <div className='flex  items-center font-RB border-b-2 border-white' >

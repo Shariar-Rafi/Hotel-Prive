@@ -6,6 +6,7 @@ import About from '../About'
 import RoomSuits from '../RoomSuits'
 import Service from '../Service'
 import Newsletter from '../Newsletter'
+import FollowUs from '../FollowUs'
 
 const Home = () => {
   const [sidebarToggle, setSidebarToggle] = useState(true)
@@ -21,8 +22,7 @@ const Home = () => {
         <RoomSuits/>
         <Service/>
         <Newsletter/>
-        
-
+        <FollowUs/>        
     </div>
   )
 }

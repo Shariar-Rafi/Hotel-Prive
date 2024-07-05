@@ -12,7 +12,7 @@ const Navbar01 = () => {
     const [sidebarToggle, setSidebarToggle] = useState(false);
 
     return (
-        <div className="w-[1800px] mx-auto">
+        <div className="w-[1420px] mx-auto">
             <Sidebar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle} />
             <nav className={`py-[44px] flex justify-between items-center ${sidebarToggle ? 'pl-64' : 'pl-0'} transition-padding duration-300`}>
                 <div className='first flex items-center justify-center text-xl gap-x-8 cursor-pointer'>
