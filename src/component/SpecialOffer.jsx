@@ -28,7 +28,8 @@ const SpecialOffer = () => {
                         transition: transform 0.5s;
                     }
                     .slick-center .image-container {
-                        height: 400px; /* Adjust this height as needed */
+                        height: 400px;
+                        
                     }
                     .slider-container .slick-slide {
                         display: flex;
@@ -36,7 +37,7 @@ const SpecialOffer = () => {
                         align-items: center;
                     }
                     .image-container {
-                        height: 300px; /* Default height */
+                        height: 350px; 
                         overflow: hidden;
                         display: flex;
                         align-items: center;
@@ -50,7 +51,7 @@ const SpecialOffer = () => {
                 <p className='text-sm font-RB tracking-widest text-[#21160E]'>MAKE MEMORIES HAPPEN</p>
             </div>
             <h3 className='text-[48px] text-[#21160E] font-Tinos font-medium text-center mb-10'>Special Offers</h3>
-            <div className='w-full'>
+            <div className='w-full h-[300px]'>
                 <div className="slider-container">
                     <Slider {...settings}>
                         <div className="image-container">
