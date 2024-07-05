@@ -22,7 +22,7 @@ Hotel Prive is a luxurious, user-friendly website designed to provide an excepti
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **React Icons**: A collection of popular icons for use in React projects.
 - **React Router**: For navigation and routing within the application.
-- **Slick Carousel**: For creating responsive and customizable carousels.
+- **React Slick Slider**: For creating responsive and customizable Slider.
 - **Vite**: A fast and modern build tool for front-end development.
 
 ## Installation
