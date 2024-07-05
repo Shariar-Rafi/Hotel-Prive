@@ -7,22 +7,27 @@ import RoomSuits from '../RoomSuits'
 import Service from '../Service'
 import Newsletter from '../Newsletter'
 import FollowUs from '../FollowUs'
+import ScrollToTop from "react-scroll-to-top";
+import SpecialOffer from '../SpecialOffer'
+
 
 const Home = () => {
   const [sidebarToggle, setSidebarToggle] = useState(true)
   return (
     <div>
-        <Sidebar sidebarToggle={sidebarToggle} />
-        <Dashboard 
+      <Sidebar sidebarToggle={sidebarToggle} />
+      <Dashboard
         sidebarToggle={sidebarToggle}
         setSidebarToggle={setSidebarToggle}
-        />
-        <Banner/>
-        <About/>
-        <RoomSuits/>
-        <Service/>
-        <Newsletter/>
-        <FollowUs/>        
+      />
+      <Banner />
+      <About />
+      <RoomSuits />
+      <Service />
+      <SpecialOffer/>
+      <Newsletter />
+      <FollowUs /> 
+      <ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth />
     </div>
   )
 }
