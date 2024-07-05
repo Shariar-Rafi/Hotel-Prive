@@ -8,7 +8,7 @@ import logo from "../assets/logo.png"
 
 const Sidebar = ({ sidebarToggle, setSidebarToggle }) => {
     return (
-        <div className={`fixed top-0 left-0 w-[204px] md:w-[304px] px-[60px] h-full py-14 bg-[#21160E]  text-white transform 
+        <div className={`fixed top-0 left-0 w-[204px] md:w-[304px] px-[60px] h-screen md:h-full py-14 bg-[#21160E]  text-white transform 
         ${sidebarToggle ? 'translate-x-0 -z-50' : '-translate-x-full z-50'} transition-transform duration-300`}>
 
             <div className="main h-svh md:h-full flex flex-col items-center gap-y-12 justify-normal md:justify-between">
