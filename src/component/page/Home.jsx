@@ -16,13 +16,13 @@ const Home = () => {
     <div>
 
       <Banner />
-      {/* <About />
+      <About />
       <RoomSuits />
       <Service />
       <SpecialOffer/>
       <Newsletter />
       <FollowUs /> 
-      <ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth /> */}
+      <ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth /> 
     </div>
   )
 }
