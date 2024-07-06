@@ -80,7 +80,7 @@ const Description = () => {
 
 
 
-                        <div className="right_box w-[140px] md:w-[340px] h-[650px] md:h-[950px] p-8 bg-[#664831]">
+                        <div className="right_box w-[140px] md:w-[340px] h-[68px] md:h-[950px] p-8 bg-[#664831]">
                             <div className='flex gap-x-1 md:gap-x-6 items-center justify-center mb-0 md:mb-8'>
                                 <SlCalender className='text-white text-sm md:text-[42px] mb-6 md:mb-5' />
                                 <h2 className='font-Tinos text-[7px] md:text-[24px] mb-6 font-medium text-white leading-normal md:leading-8'>Check Availability</h2>
@@ -207,7 +207,7 @@ const Description = () => {
                                     </p>
                                 </div>
                             </div>
-                            <Button text="Check Availability" className="md:rounded-md py-0.5 md:py-4 text-[6px] md:text-[10px] 
+                            <Button text="Check Availability" className="md:rounded-md text-[6px] md:text-[10px] 
                             md:text-sm w-full tracking-normal md:tracking-widest " to="#" />
 
                         </div>
