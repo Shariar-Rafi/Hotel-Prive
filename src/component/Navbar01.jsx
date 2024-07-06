@@ -34,7 +34,7 @@ const Navbar01 = () => {
             <div ref={sidebarRef}>
                 <Sidebar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle} />
             </div>
-            <nav className={`py-[22px] md:py-[44px] flex justify-normal md:justify-between items-center ${sidebarToggle ? 'pl-44 md:pl-64' : 'pl-0'} transition-padding duration-300`}>
+            <nav className={`py-[22px] md:py-[44px] flex justify-normal md:justify-between items-center ${sidebarToggle ? 'pl-48 md:pl-64' : 'pl-0'} transition-opacity duration-300`}>
                 <div className='first flex items-center justify-center text-xl gap-x-8 cursor-pointer'>
                     <FaBars className='text-white cursor-pointer' onClick={() => setSidebarToggle(!sidebarToggle)} />
 
@@ -43,7 +43,7 @@ const Navbar01 = () => {
                     </div>
                 </div>
 
-                <div className='second ml-[30%] md:ml-36 '>
+                <div className={`second ml-[30%] md:ml-36  ${sidebarToggle?"opacity-0 md:opacity-100":"opacity-100"}`}>
                     <Image src={logo} alt="logo.png" href="/" className="w-24 md:w-auto" />
                 </div>
 
@@ -54,7 +54,9 @@ const Navbar01 = () => {
                             +1 800 603 6035
                         </p>
                     </Link>
-                    <Button to="/book-room" text="Book Now" className="py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg tracking-normal md:tracking-widest " />
+                    <Button to="/book-room" text="Book Now" 
+                    className={`py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg
+                    ${sidebarToggle?"opacity-0 md:opacity-100":"opacity-100"}`} />
                 </div>
             </nav>
         </div>
