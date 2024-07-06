@@ -10,18 +10,16 @@ import { FiGithub } from 'react-icons/fi'
 import Image from './layer/Image'
 
 
-
-
 const Footer = () => {
     return (
-        <div className='bg-[#473D35] py-36 w-full'>
-            <div className='w-[1420px] bg-[#473D35] mx-auto'>
+        <div className='bg-[#473D35] py-16 md:py-36 w-full'>
+            <div className='w-[340px] md:w-[1420px] bg-[#473D35] mx-auto'>
                 <div>
-                    <div className='flex justify-center items-start' >
-                        <div className='flex flex-col gap-y-6 mr-[125px]'>
+                    <div className='flex justify-center items-start flex-wrap' >
+                        <div className='flex flex-col gap-y-1 md:gap-y-6 mr-0 md:mr-[125px]'>
 
-                            <h5 className='font-Tinos text-[32px] text-white leading-[41.6px] capitalize text-center'>Contact Us</h5>
-                            <div className='text-white text-base leading-7 flex items-center flex-col'>
+                            <h5 className='font-Tinos text-3xl md:text-[32px] text-white leading-[41.6px] capitalize text-center'>Contact Us</h5>
+                            <div className='text-white text-xs md:text-base leading-normal md:leading-7 flex items-center flex-col'>
                                 <p className='mb-2'>7 Rue Caulaincourt, 75018 Paris, France</p>
                                 <Link to="tel:+1 800 603 6035">
                                     <p>Phone: +1 800 603 6035</p>
@@ -36,11 +34,11 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className='w-[438px] justify-center items-center flex flex-col mr-[229px]'>
-                            <Image src={footerLogo} />
-                            <p className='text-[#fff] font-OS text-base leading-7 text-center mt-8 '>"The best way to find yourself is to lose yourself in the service of others.”</p>
+                        <div className='w-[340px] md:w-[438px] justify-center items-center flex flex-col mr-0 md:mr-[229px] mt-4 md:mt-0 mb-8 md:mb-0'>
+                            <Image className="w-40 md:w-auto" src={footerLogo} />
+                            <p className='text-[#fff] font-Tinos text-sm md:text-base leading-normal md:leading-7 text-center mt-4 md:mt-8 '>"The best way to find yourself is to lose yourself in the service of others.”</p>
 
-                            <div className='text-[#fff] flex gap-x-4 mt-6'>
+                            <div className='text-[#fff] flex gap-x-6 md:gap-x-4 mt-6'>
                                 <Link to="https://www.facebook.com/shariar.rafi364" target='_blank'>
                                     <FaFacebookF />
                                 </Link>
@@ -55,15 +53,15 @@ const Footer = () => {
 
                             </div>
                             <div className='awards flex gap-x-2 mt-8'>
-                                <Image className="w-[70px]" src={a1} alt={a1}/>
-                                <Image className="w-[80px]" src={a3} alt={a3}/>
-                                <Image className="w-[70px]" src={a2} alt={a2}/>
+                                <Image className="w-[50px] md:w-[70px]" src={a1} alt={a1}/>
+                                <Image className="w-[55px] md:w-[80px]" src={a3} alt={a3}/>
+                                <Image className="w-[50px] md:w-[70px]" src={a2} alt={a2}/>
                             </div>
                         </div>
 
 
                         <div className='text-white flex flex-col justify-center items-center gap-y-2'>
-                            <h5 className='font-Tinos text-[32px] leading-[41.6px] capitalize  mb-8'>Rooms & Suits</h5>
+                            <h5 className='font-Tinos  text-3xl md:text-[32px] leading-[41.6px] capitalize mb-0 md:mb-8'>Rooms & Suits</h5>
 
                             <Link className='text-[#BF885E]'>
                                 <div class="flex items-center justify-center gap-x-3">
@@ -113,8 +111,8 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <p className='text-white text-base leading-7 flex justify-center pt-20 font-OS tracking-wide'>
-                        Copyright © 2024 Hôtel Privé. All Rights Reserved.
+                    <p className='text-white text-base leading-7 flex justify-center text-center pt-10 md:pt-20 font-RB tracking-wide'>
+                        Copyright © 2024 Hôtel Privé. Recreated by Md Monem Shariar Rafi.
                     </p>
 
                 </div>

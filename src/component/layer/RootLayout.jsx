@@ -9,7 +9,7 @@ const RootLayout = () => {
 
   return (
     <div>
-      {/* <Sidebar sidebarToggle={sidebarToggle} /> */}
+      <Sidebar sidebarToggle={sidebarToggle} />
       <Dashboard
         sidebarToggle={sidebarToggle}
         setSidebarToggle={setSidebarToggle}
@@ -17,7 +17,7 @@ const RootLayout = () => {
 
       <Outlet />
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   )

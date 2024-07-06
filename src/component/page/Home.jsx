@@ -22,7 +22,7 @@ const Home = () => {
       <SpecialOffer/>
       <Newsletter />
       <FollowUs /> 
-      {/*<ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth />  */}
+      <ScrollToTop className='bg-[#FFF] hidden md:flex justify-center items-center rounded-[50%] p-3' smooth /> 
     </div>
   )
 }
