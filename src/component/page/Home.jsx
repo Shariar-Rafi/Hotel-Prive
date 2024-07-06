@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import Sidebar from '../Sidebar'
-import Dashboard from '../Dashboard'
+import React from 'react'
 import Banner from '../Banner'
 import About from '../About'
 import RoomSuits from '../RoomSuits'

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from './layer/Image'
-import bg from "../assets/bg.jpg"
+import bg02 from "../assets/bg02.jpg"
 import line from "../assets/line.png"
 import { GoPlay } from "react-icons/go";
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
@@ -10,7 +10,7 @@ import Button from './layer/Button';
 
 
 
-const Banner = () => {
+const Banner02 = () => {
   const [count01, setCount01] = useState(1);
   const [count02, setCount02] = useState(1);
   return (
@@ -114,7 +114,7 @@ const Banner = () => {
 
       <div className="relative before:absolute before:left-0 before:right-0 before:top-0 before:z-10 before:h-full before:w-full
        before:bg-[#473D35]  before:opacity-50">
-        <img src={bg} alt="bg" className="relative z-0 w-full h-full" />
+        <img src={bg02} alt="bg02" className="relative z-0 w-full h-full" />
 
 
       </div>
@@ -124,4 +124,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default Banner02

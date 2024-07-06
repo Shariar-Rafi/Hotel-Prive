@@ -12,8 +12,8 @@ const SliderItem = ({ text, className }) => {
         ipsum auctor pulvinar. Vestibulum iaculis lacinia est.
       </p>
       <div className='flex gap-x-4 justify-center'>
-        <Button className="px-5 md:px-10 py-2 md:py-5 " text="BOOK NOW"/>
-        <Button className="px-5 md:px-10 py-2 md:py-5 !bg-[#A6734B] hover:!bg-[#BF885E]" text="DETAILS"/>
+        <Button className="px-5 md:px-10 py-2 md:py-5 " text="BOOK NOW" to="/book-room"/>
+        <Button className="px-5 md:px-10 py-2 md:py-5 !bg-[#A6734B] hover:!bg-[#BF885E]" text="DETAILS" to="/book-room"/>
       </div>
     </div>
 

@@ -68,7 +68,7 @@ const Navbar01 = () => {
                         </p>
                     </Link>
                     <Button to="/book-room" text="Book Now"
-                        className={`py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg
+                        className={`py-0.5 md:py-4 px-2 md:px-14 text-[10px] md:text-lg rounded-sm md:rounded-md
                     ${sidebarToggle ? "opacity-0 md:opacity-100" : "opacity-100"}`} />
                 </div>
             </nav>
