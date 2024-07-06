@@ -17,12 +17,12 @@ const Banner = () => {
     <div className='relative text-white'>
 
       <div className='absolute top-[30%] md:top-1/3 left-1/2 translate-x-[-50%] z-40'>
-        <div className='flex items-center justify-center gap-x-2 md:gap-x-4 mb-1 md:mb-4'>
+        <div className='flex items-center justify-center gap-x-2 md:gap-x-4 mb-1 md:mb-6'>
           <Image className="w-7 md:w-14 h-1 md:h-2 cursor-auto" src={line} alt={line} />
           <h2 className='font-RB text-[6px] md:text-sm tracking-widest'>TIME TO RECONNECT</h2>
         </div>
         <h2 className='text-sm md:text-[60px] font-Tinos'>A New Vision of Comfort</h2>
-        <div className='hidden md:flex flex-col justify-center items-center gap-y-1 mt-2 md:mt-8 '>
+        <div className='hidden md:flex flex-col justify-center items-center gap-y-1 mt-2 md:mt-10 '>
           <GoPlay className='text-white text-[20px] md:text-[80px] animate-bounce cursor-pointer hover:text-[#D9945F]' />
           <p className='text-[8px] md:text-xs font-RB tracking-widest'>WATCH THE FILM</p>
         </div>

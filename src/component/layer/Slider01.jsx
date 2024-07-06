@@ -23,28 +23,28 @@ const Slider01 = ({text1,text2,text3,text4}) => {
   return (
     <div className='w-full'>
       <Slider {...settings}>
-        <div className="relative w-full h-[816px]">
+        <div className="relative w-full h-[300px] md:h-[816px] ">
           <Image className="object-cover w-full h-full" src={s1}/>
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60 transition-all duration-300 group">
             <SliderItem className="" text={text1}/>
           </div>
         </div>
 
-        <div className="relative w-full h-[816px]">
+        <div className="relative w-full h-[300px] md:h-[816px] ">
           <Image className="object-cover w-full h-full" src={s2}/>
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60 transition-all duration-300 group">
             <SliderItem className="" text={text2}/>
           </div>
         </div>
 
-        <div className="relative w-full h-[816px]">
+        <div className="relative w-full h-[300px] md:h-[816px] ">
           <Image className="object-cover w-full h-full" src={s3}/>
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60 transition-all duration-300 group">
             <SliderItem className="" text={text3}/>
           </div>
         </div>
 
-        <div className="relative w-full h-[816px]">
+        <div className="relative w-full h-[300px] md:h-[816px] ">
           <Image className="object-cover w-full h-full" src={s4}/>
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60 transition-all duration-300 group">
             <SliderItem className="" text={text4}/>
