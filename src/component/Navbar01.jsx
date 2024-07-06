@@ -16,6 +16,11 @@ const Navbar01 = () => {
             setSidebarToggle(false);
         }
     };
+    const [dropdownToggle, setDropdownToggle] = useState(false);
+
+    const handleDropdownToggle = () => {
+        setDropdownToggle(!dropdownToggle);
+    };
 
     useEffect(() => {
         if (sidebarToggle) {
@@ -29,6 +34,8 @@ const Navbar01 = () => {
         };
     }, [sidebarToggle]);
 
+    
+
     return (
         <div className="w-[330px] md:w-[1420px] mx-auto relative">
             <div ref={sidebarRef}>
@@ -38,12 +45,18 @@ const Navbar01 = () => {
                 <div className='first flex items-center justify-center text-xl gap-x-8 cursor-pointer'>
                     <FaBars className='text-white cursor-pointer' onClick={() => setSidebarToggle(!sidebarToggle)} />
 
-                    <div className='hidden md:flex text-white text-base font-RB items-center justify-center'>
+                    <div className='relative hidden md:flex text-white text-base font-RB items-center justify-center' onClick={handleDropdownToggle}>
                         EN <FaAngleDown />
+                        {dropdownToggle && (
+                            <ul className='absolute top-full mt-2 bg-white text-black w-32 py-2 rounded shadow-md'>
+                                <li className='px-4 py-2 hover:bg-gray-200 cursor-pointer text-center font-RB'>EN</li>
+                                <li className='px-4 py-2 hover:bg-gray-200 cursor-pointer text-center font-RB'>FN</li>
+                            </ul>
+                        )}
                     </div>
                 </div>
 
-                <div className={`second ml-[30%] md:ml-36  ${sidebarToggle?"opacity-0 md:opacity-100":"opacity-100"}`}>
+                <div className={`second ml-[30%] md:ml-36  ${sidebarToggle ? "opacity-0 md:opacity-100" : "opacity-100"}`}>
                     <Image src={logo} alt="logo.png" href="/" className="w-24 md:w-auto" />
                 </div>
 
@@ -54,9 +67,9 @@ const Navbar01 = () => {
                             +1 800 603 6035
                         </p>
                     </Link>
-                    <Button to="/book-room" text="Book Now" 
-                    className={`py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg
-                    ${sidebarToggle?"opacity-0 md:opacity-100":"opacity-100"}`} />
+                    <Button to="/book-room" text="Book Now"
+                        className={`py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg
+                    ${sidebarToggle ? "opacity-0 md:opacity-100" : "opacity-100"}`} />
                 </div>
             </nav>
         </div>

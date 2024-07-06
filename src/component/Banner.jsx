@@ -104,7 +104,7 @@ const Banner = () => {
 
               </div>
             </div>
-            <Button text="Check Availability" className="py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg tracking-normal md:tracking-widest" to="#" />
+            <Button text="Check Availability" className="rounded-md py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg tracking-normal md:tracking-widest" to="#" />
           </div>
 
         </Container>

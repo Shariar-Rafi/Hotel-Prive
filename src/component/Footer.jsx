@@ -19,8 +19,8 @@ const Footer = () => {
                         <div className='flex flex-col gap-y-1 md:gap-y-6 mr-0 md:mr-[125px]'>
 
                             <h5 className='font-Tinos text-3xl md:text-[32px] text-white leading-[41.6px] capitalize text-center'>Contact Us</h5>
-                            <div className='text-white text-xs md:text-base leading-normal md:leading-7 flex items-center flex-col'>
-                                <p className='mb-2'>7 Rue Caulaincourt, 75018 Paris, France</p>
+                            <div className='text-white text-xs md:text-base leading-7 flex items-center flex-col'>
+                                <p className='mb-0 md:mb-2'>7 Rue Caulaincourt, 75018 Paris, France</p>
                                 <Link to="tel:+1 800 603 6035">
                                     <p>Phone: +1 800 603 6035</p>
                                 </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
                         </div>
 
                         <div className='w-[340px] md:w-[438px] justify-center items-center flex flex-col mr-0 md:mr-[229px] mt-4 md:mt-0 mb-8 md:mb-0'>
-                            <Image className="w-40 md:w-auto" src={footerLogo} />
+                            <Image className="my-2 md:my-0" src={footerLogo} />
                             <p className='text-[#fff] font-Tinos text-sm md:text-base leading-normal md:leading-7 text-center mt-4 md:mt-8 '>"The best way to find yourself is to lose yourself in the service of others.”</p>
 
                             <div className='text-[#fff] flex gap-x-6 md:gap-x-4 mt-6'>
