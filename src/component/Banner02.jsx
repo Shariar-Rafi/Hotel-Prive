@@ -43,9 +43,9 @@ const Banner02 = () => {
 
             <div className='flex flex-col'>
               <p className='text-[8px] md:text-lg font-Tinos font-medium'>From</p>
-              <p className='text-[10px] md:text-[32px] font-Tinos font-medium mb-0 md:mb-2'>$199/night</p>
+              <p className='text-[10px] md:text-[32px] font-Tinos leading-3 md:leading-normal font-medium mb-0 md:mb-2'>$199/night</p>
               <Button text="Book This Room"
-                className="rounded-sm md:rounded-md py-0.5 md:py-4 px-1 md:px-6 text-[6px] md:text-sm" to="#" />
+                className="rounded-sm md:rounded-md py-0 md:py-4 px-1 md:px-6 !text-[6px] md:!text-sm" to="#" />
             </div>
 
           </div>
