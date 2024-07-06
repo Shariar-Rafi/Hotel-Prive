@@ -10,7 +10,7 @@ import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-ico
 const NextArrow = ({ onClick }) => {
     return (
         <div
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#aaaaaaa2] p-4 rounded-full cursor-pointer z-50"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#aaaaaaa2] p-4 rounded-full cursor-pointer z-40"
             onClick={onClick}
         >
             <MdKeyboardDoubleArrowRight className="text-white" />
@@ -21,7 +21,7 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
     return (
         <div
-            className="absolute top-1/2 left-0 transform -translate-y-1/2  bg-[#aaaaaaa2] p-4 rounded-full cursor-pointer z-50"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2  bg-[#aaaaaaa2] p-4 rounded-full cursor-pointer z-40"
             onClick={onClick}
         >
             <MdKeyboardDoubleArrowLeft className="text-white" />
@@ -68,12 +68,12 @@ const SpecialOffer = () => {
 
     return (
         <div className='bg-white pt-8 md:pt-28'>
-            <div className='flex gap-x-4 justify-center items-center mb-0 md:mb-6'>
+            <div className='flex gap-x-4 justify-center items-center mb-0 md:mb-8'>
                 <Image src={line2} className="w-7 md:w-14 h-1 md:h-2 cursor-auto" />
-                <p className='font-RB text-[8px] md:text-base tracking-widest'>MAKE MEMORIES HAPPEN
+                <p className='font-RB text-[8px] md:text-base tracking-widest text-[#626262]'>MAKE MEMORIES HAPPEN
                 </p>
             </div>
-            <h3 className='text-lg md:text-[48px] text-[#21160E] font-Tinos mb-4 md:mb-10 font-medium text-center'>
+            <h3 className='text-lg md:text-[48px] text-[#21160E] font-Tinos mb-4 md:mb-14 font-medium text-center'>
             Special Offers
             </h3>
             <div className='w-full'>
