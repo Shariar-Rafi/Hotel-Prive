@@ -6,7 +6,7 @@ import Slider01 from './layer/Slider01'
 
 const RoomSuits = () => {
     return (
-        <div className='pt-8 md:pt-32 mb-0 md:-mb-2 bg-white'>
+        <div className='pt-8 md:pt-32 -mb-2 bg-white'>
             <div className="top">
                 <div className='flex gap-x-4 items-center  mb-1 md:mb-10 flex-col'>
                     <div className='flex gap-x-2 md:gap-x-6 items-center mb-2 md:mb-10'>

@@ -18,8 +18,8 @@ const Home = () => {
       <Banner />
       <About />
       <RoomSuits />
-      {/* <Service />
-      <SpecialOffer/>
+      <Service />
+      {/* <SpecialOffer/>
       <Newsletter />
       <FollowUs /> 
       <ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth />  */}
