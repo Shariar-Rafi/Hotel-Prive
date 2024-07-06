@@ -30,7 +30,7 @@ const Navbar01 = () => {
     }, [sidebarToggle]);
 
     return (
-        <div className="w-[300px] md:w-[1420px] mx-auto relative">
+        <div className="w-[330px] md:w-[1420px] mx-auto relative">
             <div ref={sidebarRef}>
                 <Sidebar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle} />
             </div>
@@ -47,14 +47,14 @@ const Navbar01 = () => {
                     <Image src={logo} alt="logo.png" href="/" className="w-24 md:w-auto" />
                 </div>
 
-                <div className='third hidden lg:flex justify-center items-center gap-x-8'>
-                    <Link to="tel:+1 800 603 6035" className='flex gap-x-1 justify-center items-center'>
-                        <MdOutlineCall className='text-white text-2xl' />
-                        <p className='text-sm text-white font-bold '>
+                <div className='third flex justify-center items-center gap-x-8 ml-auto md:ml-0 -mt-1 md:mt-0'>
+                    <Link to="tel:+1 800 603 6035" className='hidden md:flex gap-x-1 justify-center items-center '>
+                        <MdOutlineCall className='text-white text-2xl ' />
+                        <p className=' text-sm text-white font-bold '>
                             +1 800 603 6035
                         </p>
                     </Link>
-                    <Button to="/book-room" text="Book Now" className="py-2 md:py-4 px-3 md:px-5 uppercase tracking-wider" />
+                    <Button to="/book-room" text="Book Now" className="py-0.5 md:py-4 px-4 md:px-14 text-[10px] md:text-lg tracking-normal md:tracking-widest " />
                 </div>
             </nav>
         </div>
