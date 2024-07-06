@@ -20,8 +20,8 @@ const Home = () => {
       <RoomSuits />
       <Service />
       <SpecialOffer/>
-      {/*<Newsletter />
-      <FollowUs /> 
+      <Newsletter />
+      {/*<FollowUs /> 
       <ScrollToTop className='bg-[#856A54] flex justify-center items-center rounded-[50%] p-2' smooth />  */}
     </div>
   )
