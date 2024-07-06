@@ -4,78 +4,195 @@ import { SlCalender } from 'react-icons/sl'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import Button from './layer/Button'
 import { GiCoffeeCup } from 'react-icons/gi'
+import Image from './layer/Image'
+import plan from '../assets/plan.png'
+import g1 from '../assets/g1.jpg'
+import g2 from '../assets/g2.jpg'
+import g3 from '../assets/g3.jpg'
+import g4 from '../assets/g4.jpg'
+import Slider from "react-slick";
+import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+const NextArrow = ({ onClick }) => {
+    return (
+        <div
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#0000003e] p-1 md:p-4 rounded-full cursor-pointer z-40"
+            onClick={onClick}
+        >
+            <MdKeyboardDoubleArrowRight className="text-white" />
+        </div>
+    );
+};
+
+const PrevArrow = ({ onClick }) => {
+    return (
+        <div
+            className="absolute top-1/2 left-0 transform -translate-y-1/2  bg-[#0000003e] p-1 md:p-4 rounded-full cursor-pointer z-40"
+            onClick={onClick}
+        >
+            <MdKeyboardDoubleArrowLeft className="text-white" />
+        </div>
+    );
+};
 
 const Description = () => {
     const [count01, setCount01] = useState(1);
     const [count02, setCount02] = useState(1);
+
+    const settings = {
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        speed: 1000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+    };
     return (
-        <div className='py-36 bg-white'>
+        <div className='py-10 md:py-36 bg-white'>
             <Container>
                 <div className="main">
                     <div className="description flex justify-between">
                         <div className="left_box flex flex-col pr-4">
                             <h3 className='font-Tinos text-base  md:text-[24px] mb-2 md:mb-6 font-medium'>Description</h3>
-                            <p className='font-Tinos text-[10px] md:text-lg max-w-[900px] text-justify mb-6'>Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.</p>
-                            <div>
-                                <h5 className='font-Tinos  text-[24px] mb-6 font-medium'>Room Facilities</h5>
-                                <div className='flex max-w-[900px] flex-wrap gap-x-40 gap-y-4 justify-between'>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                            <p className='font-Tinos text-[10px] md:text-lg max-w-[200px] md:max-w-[900px] text-justify mb-2 md:mb-6'>Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.</p>
+                            <div className='mb-2 md:mb-6'>
+                                <h5 className='font-Tinos  text-[24px] mb-2 md:mb-6 font-medium'>Room Facilities</h5>
+                                <div className='flex max-w-[200px] md:max-w-[900px] flex-wrap gap-x-3 md:gap-x-40 gap-y-2 md:gap-y-4 justify-between'>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
+
+                                    <p className='flex items-center gap-x-1 md:gap-x-4 '><GiCoffeeCup className='text-[#865733] text-[8px] md:text-lg' />
+                                        <span className='font-Tinos text-[8px] md:text-lg'>Kettle, tea & coffee</span>
                                     </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
-                                    <p className='flex items-center gap-x-4 '><GiCoffeeCup className='text-[#865733] text-lg'/>
-                                        <span className='font-Tinos text-lg'>Kettle, tea & coffee</span>
-                                    </p>
+
+
+
 
                                 </div>
                             </div>
+
+                            <h3 className='font-Tinos text-base  md:text-[24px] mb-2 md:mb-6 font-medium'>Floor Plan</h3>
+                            <Image className="object-cover mb-2 md:mb-6 cursor-auto" src={plan} alt={plan} />
+                            <h5 className='font-Tinos  text-[24px] mb-2 md:mb-6 font-medium'>Room Facilities</h5>
+                            <div className='main_slider max-w-[200px] md:max-w-[900px] mb-2 md:mb-6'>
+                                <div className="slider-container relative">
+                                    <Slider {...settings}>
+                                        <div className="image-container">
+                                            <Image src={g1} />
+                                        </div>
+                                        <div className="image-container">
+                                            <Image src={g2} />
+                                        </div>
+                                        <div className="image-container">
+                                            <Image src={g3} />
+                                        </div>
+                                        <div className="image-container">
+                                            <Image src={g4} />
+                                        </div>
+                                    </Slider>
+                                </div>
+                            </div>
+                            <h3 className='font-Tinos text-base  md:text-[24px] mb-2 md:mb-6 font-medium'>Terms and Conditions</h3>
+                            <p className='font-Tinos text-[10px] md:text-lg max-w-[200px] md:max-w-[900px] text-justify mb-2 md:mb-6'>
+                                Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Nulla facilisi. Aenean nec eros.
+                            </p>
+                            <h3 className='font-Tinos text-base  md:text-[24px] mb-2 md:mb-6 font-medium'>Rates</h3>
+                            <div className='rates_table font-RB  '>
+                                <div className="flex justify-start items-center ">
+                                        <div className="">
+                                            <table className="bg-white rounded-lg overflow-hidden shadow-lg max-w-[200px] md:max-w-[900px]">
+                                                <thead className="bg-[#00000023] text-white text-xs">
+                                                    <tr>
+                                                        <th className="p-1 md:p-3 text-left text-black font-medium text-xs" >Price
+                                                        in USD</th>
+                                                        <th className="p-1 md:p-3 text-left text-black font-medium text-xs">Season_1
+                                                        </th>
+                                                        <th className="p-1 md:p-3 text-left text-black font-medium text-xs">Season_2
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr className="hover:bg-gray-100">
+                                                        <td className="border p-1 md:p-3 text-xs">Sunday - Thursday</td>
+                                                        <td className="border p-1 md:p-3 truncate text-xs">$ 99	</td>
+                                                        <td className="border p-1 md:p-3 text-xs">$ 159	</td>
+                                                    </tr>
+                                                    <tr className="hover:bg-gray-100">
+                                                        <td className="border p-1 md:p-3 text-xs">Friday - Saturday</td>
+                                                        <td className="border p-1 md:p-3 truncate text-xs">$ 119</td>
+                                                        <td className="border p-1 md:p-3 text-xs">$ 159	</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
 
 
