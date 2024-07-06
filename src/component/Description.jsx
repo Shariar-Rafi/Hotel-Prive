@@ -207,7 +207,7 @@ const Description = () => {
                                     </p>
                                 </div>
                             </div>
-                            <Button text="Check Availability" className="md:rounded-md py-0.5 md:py-4 text-[8px] md:text-[10px] 
+                            <Button text="Check Availability" className="md:rounded-md py-0.5 md:py-4 text-[6px] md:text-[10px] 
                             md:text-sm w-full tracking-normal md:tracking-widest " to="#" />
 
                         </div>
