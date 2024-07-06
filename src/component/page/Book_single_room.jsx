@@ -1,6 +1,6 @@
 import React from 'react'
 
-const single_room = () => {
+const Book_single_room = () => {
   return (
     <div>
       <p>rooms_single_image_sidebar.html</p>
@@ -8,4 +8,4 @@ const single_room = () => {
   )
 }
 
-export default single_room
+export default Book_single_room

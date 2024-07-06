@@ -30,31 +30,31 @@ const Navbar01 = () => {
     }, [sidebarToggle]);
 
     return (
-        <div className="w-[1420px] mx-auto relative">
+        <div className="w-[300px] md:w-[1420px] mx-auto relative">
             <div ref={sidebarRef}>
                 <Sidebar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle} />
             </div>
-            <nav className={`py-[44px] flex justify-between items-center ${sidebarToggle ? 'pl-64' : 'pl-0'} transition-padding duration-300`}>
+            <nav className={`py-[22px] md:py-[44px] flex justify-normal md:justify-between items-center ${sidebarToggle ? 'pl-44 md:pl-64' : 'pl-0'} transition-padding duration-300`}>
                 <div className='first flex items-center justify-center text-xl gap-x-8 cursor-pointer'>
                     <FaBars className='text-white cursor-pointer' onClick={() => setSidebarToggle(!sidebarToggle)} />
 
-                    <div className='flex gap-x-1 text-white text-base font-RB items-center justify-center'>
+                    <div className='hidden md:flex text-white text-base font-RB items-center justify-center'>
                         EN <FaAngleDown />
                     </div>
                 </div>
 
-                <div className='second ml-36'>
-                    <Image src={logo} alt="logo.png" href="/" />
+                <div className='second ml-[30%] md:ml-36 '>
+                    <Image src={logo} alt="logo.png" href="/" className="w-24 md:w-auto" />
                 </div>
 
-                <div className='third flex justify-center items-center gap-x-8'>
+                <div className='third hidden lg:flex justify-center items-center gap-x-8'>
                     <Link to="tel:+1 800 603 6035" className='flex gap-x-1 justify-center items-center'>
                         <MdOutlineCall className='text-white text-2xl' />
-                        <p className='text-sm text-white font-bold'>
+                        <p className='text-sm text-white font-bold '>
                             +1 800 603 6035
                         </p>
                     </Link>
-                    <Button text="Book Now" className="py-4 px-5 uppercase tracking-wider" />
+                    <Button to="/book-room" text="Book Now" className="py-2 md:py-4 px-3 md:px-5 uppercase tracking-wider" />
                 </div>
             </nav>
         </div>

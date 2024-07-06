@@ -12,14 +12,9 @@ import SpecialOffer from '../SpecialOffer'
 
 
 const Home = () => {
-  const [sidebarToggle, setSidebarToggle] = useState(true)
   return (
     <div>
-      <Sidebar sidebarToggle={sidebarToggle} />
-      <Dashboard
-        sidebarToggle={sidebarToggle}
-        setSidebarToggle={setSidebarToggle}
-      />
+
       <Banner />
       {/* <About />
       <RoomSuits />
