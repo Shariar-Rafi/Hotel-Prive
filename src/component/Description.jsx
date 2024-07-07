@@ -262,7 +262,7 @@ const Description = () => {
                                     </div>
                                 </div>
 
-                                <Button text="POST RIVEW"
+                                <Button text="POST REVIEW"
                                     className="rounded-sm md:rounded-md py-0.5 md:py-4 px-2 md:px-10 !text-[8px]" to="#" />
 
 
